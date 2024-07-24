@@ -24,7 +24,7 @@ class landing {
             this.saveData();
             alert("registartion successfull");
             // method to nvaigate to a html page
-            window.location="login.html"
+            window.location="index2.html"
         }
     }
      else{
@@ -48,7 +48,7 @@ class landing {
             if(loggedEmail in this.dataBase){
                 if(this.dataBase[loggedEmail].password === loggedPassword){
                     localStorage.setItem("firstname",this.dataBase[loggedEmail].name)
-                    window.location='home.html'
+                    window.location='index1.html'
                 }
                 else{
                     alert("password mismatch")

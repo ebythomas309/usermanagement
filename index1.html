@@ -14,12 +14,12 @@
 </body>
 <script>
     if(localStorage.getItem("firstname") == null){
-        window.location="login.html"
+        window.location="index2.html"
     }
     let name= localStorage.getItem("firstname")
     firstname.innerHTML= name;
     function logout(){
-        window.location="login.html"
+        window.location="index2.html"
         localStorage.removeItem("firstname")
     }
 </script>
